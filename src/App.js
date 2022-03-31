@@ -1,16 +1,62 @@
-import React from 'react';
-import Produtos from './Components/Produtos/Produtos';
+import React, { Component } from 'react';
+import Home from './Components/Home'
+import Styled from 'styled-components'
 
 
-const App = () => {
+
+
+const produtos = [
+  {
+    id:1,
+    nome:"Roupa1",
+    preco:"100.0",
+    imagem:"",
+    quantidade: "4",
+  },
+
+  {
+    id:1,
+    nome:"Roupa1",
+    preco:"100.0",
+    imagem:"",
+    quantidade: "4",
+  },
+
+  {
+    id:1,
+    nome:"Roupa1",
+    preco:"100.0",
+    imagem:"",
+    quantidade: "4",
+  },
+
+  {
+    id:1,
+    nome:"Roupa1",
+    preco:"100.0",
+    imagem:"",
+    quantidade: "4",
+  },
+]
+
+
+class App extends React.Component {
+render() {
   return (
-    <div>
-     <Produtos />
-    </div>
+    <ContainerPai>
+
+    </ContainerPai>
   )
 }
-  
+
+
+}
+
+
+
 export default App;
+
+
 
 
 
