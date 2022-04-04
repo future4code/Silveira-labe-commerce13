@@ -1,9 +1,9 @@
 import React from "react";
-import App from "../App";
 
 
 
-class Home extends Component {
+
+class Home extends React.Component {
     
 
 

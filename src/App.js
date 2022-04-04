@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
-import Home from './Components/Home'
-import Styled from 'styled-components'
+import React from 'react';
+import CardProdutos from './Components/CardProdutos';
+import ProdutoLista from "./Components/ProdutoLista"
+import styled from 'styled-components';
 
 
 
 
-const produtos = [
+let produtoLista = [
   {
     id:1,
     nome:"Roupa1",
@@ -16,7 +17,7 @@ const produtos = [
 
   {
     id:1,
-    nome:"Roupa1",
+    nome:"Roupa2",
     preco:"100.0",
     imagem:"",
     quantidade: "4",
@@ -24,7 +25,7 @@ const produtos = [
 
   {
     id:1,
-    nome:"Roupa1",
+    nome:"Roupa3",
     preco:"100.0",
     imagem:"",
     quantidade: "4",
@@ -32,28 +33,21 @@ const produtos = [
 
   {
     id:1,
-    nome:"Roupa1",
+    nome:"Roupa4",
     preco:"100.0",
     imagem:"",
     quantidade: "4",
   },
 ]
 
-
-class App extends React.Component {
-render() {
-  return (
-    <ContainerPai>
-
-    </ContainerPai>
+function App() {
+  return(
+    <div>
+      <CardProdutos/>
+      <ProdutoLista/>
+    </div>
   )
 }
-
-
-}
-
-
-
 export default App;
 
 
